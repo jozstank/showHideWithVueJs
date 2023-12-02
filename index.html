@@ -11,7 +11,7 @@
       <div class="question">
         <h3>What is Vue?</h3>
         <svg
-          v-if="!show"
+          v-show="!show"
           @click="updateShow"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -26,7 +26,7 @@
         </svg>
 
         <svg
-          v-else
+          v-show="show"
           @click="updateShow"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -40,7 +40,7 @@
           />
         </svg>
       </div>
-      <p v-if="show">
+      <p v-show="show">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod earum id
         odit eum cumque sed repudiandae ut neque, ducimus incidunt. Corrupti
         omnis praesentium maiores id hic dignissimos doloribus laboriosam
