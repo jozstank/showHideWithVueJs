@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+#app {
+  border-bottom: 1px solid gray;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 50%;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+svg {
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+svg:hover {
+  background-color: gray;
+  color: white;
+}
+p {
+  padding: 10px;
+}
